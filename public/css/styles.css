@@ -38,6 +38,7 @@ input {
     color: #1D1F26;
     padding: 12px;
     outline: none;
+    word-break: break-all;
 }
 
 button {
@@ -101,7 +102,8 @@ button:disabled {
     color: white;
     background: #279206;
     overflow-y: scroll;
-    width: 225px;
+    min-width: 225px;
+    max-width: 225px;
 }
 
 /* Chat styles */
@@ -118,6 +120,8 @@ button:disabled {
     flex-grow: 1;
     padding: 24px 24px 0 24px;
     overflow-y: scroll;
+    max-width: 100%;
+    word-break: break-all;
 }
 
 /* Message Styles */
@@ -184,6 +188,7 @@ button:disabled {
     font-size: 22px;
     background: #17b902;
     padding: 24px;   
+    word-break: break-all;
 }
 
 .list-title {
@@ -207,6 +212,7 @@ button:disabled {
     padding: 10%;
     margin-top: 3%;
     width: 100%;
+    word-break: break-all;
 }
 
 /*MEDIA QUERIES*/
@@ -235,7 +241,7 @@ button:disabled {
       margin-right:0
     }
 }
-@media (min-width:600px) {
+@media (min-width: 600px) and (max-width: 991.98px) {
     .chat__sidebar{
         width: 150px;
     }
