@@ -208,3 +208,28 @@ button:disabled {
     margin-top: 3%;
     width: 100%;
 }
+
+/*MEDIA QUERIES*/
+@media (max-width:600px) {
+    *{
+      font-size:1rem;
+    }
+    .chat__sidebar {
+        display:none;
+    }
+    .chat__sidebar{
+      display:none;
+    }
+  
+    .chat__footer {
+      flex-direction:column;
+    }
+  
+    .chat__footer form {
+      margin-bottom:10px;
+    }
+  
+    .chat__footer button {
+      margin-right:0
+    }
+}
