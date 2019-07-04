@@ -15,5 +15,5 @@
 * in a browser - visit localhost:3000
 * ex.path(/desktop/node-chat-app/npm run start)
 
-*or visit:
+# or visit:
 * https://damian-nodeproject-v3.herokuapp.com
