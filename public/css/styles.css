@@ -100,8 +100,8 @@ button:disabled {
     height: 100vh;
     color: white;
     background: #279206;
+    overflow-y: scroll;
     width: 225px;
-    overflow-y: scroll
 }
 
 /* Chat styles */
@@ -217,10 +217,12 @@ button:disabled {
     .chat__sidebar {
         display:none;
     }
-    .chat__sidebar{
+    .chat__sidebar {
       display:none;
     }
-  
+    .chat__messages {
+        height: 100vh;
+    }
     .chat__footer {
       flex-direction:column;
     }
@@ -231,5 +233,10 @@ button:disabled {
   
     .chat__footer button {
       margin-right:0
+    }
+}
+@media (max-width:600px) {
+    .chat__sidebar{
+        width: 150px;
     }
 }
