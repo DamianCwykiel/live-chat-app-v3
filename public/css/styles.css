@@ -10,7 +10,9 @@ html {
 }
 
 input {
-    font-size: 14px;
+    font-size: 16px;
+    font-weight:500;
+    letter-spacing: 1px;
 }
 
 body {
@@ -48,7 +50,9 @@ button {
     border: none;
     color: white;
     font-size: 16px;
+    font-weight: 600;
     transition: background .3s ease;
+    letter-spacing: 1px;
 }
 
 button:hover {
@@ -117,11 +121,14 @@ button:disabled {
 
 .chat__messages {
     background:#eeeeee;
+    font-size: 24px;
     flex-grow: 1;
+    font-weight: 400;
     padding: 24px 24px 0 24px;
     overflow-y: scroll;
     max-width: 100%;
     word-break: break-all;
+    word-spacing: 1px;
 }
 
 /* Message Styles */
@@ -132,8 +139,10 @@ button:disabled {
 
 .message__name {
     font-weight: 800;
-    font-size: 14px;
+    font-size: 15px;
+    color:rgb(151, 10, 38);
     margin-right: 8px;
+    letter-spacing: .5px;
 }
 
 .message__meta {
@@ -173,8 +182,13 @@ button:disabled {
 }
 
 .chat__footer button {
-    font-size: 14px;
     background: #228B22;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 10px;
+    border: 5px #006400 solid;
+    font-size: 14px;
+    font-weight: 800;
 }
 
 .chat__footer button:hover {
@@ -202,13 +216,15 @@ button:disabled {
     color: #fff;
     justify-content: space-between;
     list-style-position:inside;
-    font-weight: 600;
+    font-weight: 500;
     padding: 12px 24px 0 24px;
 }
 .users-active {
     background-color: #17b902;
     border-radius: 5%;
+    font-size: 18px;
     justify-items: space-between;
+    letter-spacing: 1px;
     padding: 10%;
     margin-top: 3%;
     width: 100%;

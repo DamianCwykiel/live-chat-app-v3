@@ -32,7 +32,7 @@ io.on('connection', (socket) => {
 
         socket.join(user.room)
 
-        socket.emit('myMessage', generateMessages(admin, `How're you doin' ${user.username}? Welcome to ${user.room} chat room!`))
+        socket.emit('myMessage', generateMessages(admin, `Hello ${user.username}. Welcome to ${user.room} chat room!`))
         socket.broadcast.to(user.room).emit('myMessage', generateMessages(admin, `${user.username} has joined this room!`))
         io.to(user.room).emit('roomData', {
             room: user.room,
@@ -77,3 +77,19 @@ io.on('connection', (socket) => {
 server.listen(port, () => {
     console.log(`Server is up on port ${port}!`)
 })
+
+
+let scrollerID;
+let paused = true;
+let interval = 10;
+
+function startScroll(){
+    let id = setInterval(function() {
+        window.scrollBy(0, 2);
+        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+            // end of page?
+            stopScroll();
+        }
+    }, interval);
+    return id;
+}
