@@ -9,12 +9,6 @@ html {
     font-size: 14px;
 }
 
-input {
-    font-size: 16px;
-    font-weight:500;
-    letter-spacing: 1px;
-}
-
 body {
     line-height: 1.4;
     color:#1D1F26;
@@ -38,9 +32,12 @@ label {
 input {
     border: 1px solid goldenrod;
     color: #1D1F26;
+    font-size: 16px;
+    font-weight: 500;
     padding: 12px;
     outline: none;
     word-break: break-all;
+    letter-spacing: 1px;
 }
 
 button {
